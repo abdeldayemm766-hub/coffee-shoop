@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BREW &amp; BEAN | Specialty Coffee, Handcrafted Daily</title>
+<meta name="description" content="BREW &amp; BEAN is a specialty coffee shop serving carefully sourced beans, handcrafted drinks and a space to slow down.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">BREW &amp; BEAN</a>
+    <nav id="menuNav" aria-label="Main">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartOpen" aria-label="Open cart, 0 items">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2z"/><path d="M9 8a3 3 0 016 0"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+      <a href="#menu" class="btn btn-solid order">Order Now</a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuNav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80" alt="A cup of fresh coffee on a wooden table">
+  <div class="hero-shade"></div>
+  <div class="wrap hero-in">
+    <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1>Your Daily Ritual, Perfected.</h1>
+    <p>Discover exceptional coffee, handcrafted drinks, and moments worth slowing down for.</p>
+    <div class="cta">
+      <a href="#menu" class="btn btn-caramel">Explore Our Menu</a>
+      <a href="#about" class="btn btn-ghost">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Featured menu</h2>
+      <div class="filters" role="group" aria-label="Filter menu">
+        <button class="chip active" data-filter="all" aria-pressed="true">All Items</button>
+        <button class="chip" data-filter="coffee" aria-pressed="false">Coffee</button>
+        <button class="chip" data-filter="iced" aria-pressed="false">Iced Drinks</button>
+      </div>
+    </div>
+    <div class="grid menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <div class="wrap about">
+    <div class="about-img reveal"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80" alt="Warm, inviting café interior with wooden tables" loading="lazy"></div>
+    <div class="reveal">
+      <h2>More Than Just Coffee.</h2>
+      <p>We started with a simple idea: coffee tastes better when someone cares about every step. We buy small-lot beans from growers we trust, roast them in small batches, and brew each cup with patience.</p>
+      <p>Our baristas know your order by the second visit. Our tables are for lingering. Come for the espresso, stay for the company.</p>
+      <ul class="highlights">
+        <li><b>Premium Beans</b><span>Single-origin and seasonal</span></li>
+        <li><b>Expert Baristas</b><span>Trained, curious, friendly</span></li>
+        <li><b>Cozy Atmosphere</b><span>Soft light, good music</span></li>
+      </ul>
+      <a href="#why" class="btn btn-solid">Discover Our Story</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="wrap">
+    <h2 class="reveal">Why choose us</h2>
+    <div class="grid three">
+      <article class="card feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 2 6 6 4 10s-6 6-8 8c-2-4-1-9 1-12 1-2 2-4 3-6z"/><path d="M8 21c1-5 3-8 6-11"/></svg>
+        <h3>Carefully Selected Beans</h3><p>Every lot is cupped and scored before it reaches our roaster, so you taste only the best.</p>
+      </article>
+      <article class="card feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 6-8 11-8 11z"/></svg>
+        <h3>Handcrafted With Passion</h3><p>No shortcuts. Each drink is pulled, steamed and poured by hand, one at a time.</p>
+      </article>
+      <article class="card feature reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+        <h3>A Space to Feel at Home</h3><p>Comfortable seats, warm light and unhurried service make this your third place.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="gallery">
+  <div class="wrap">
+    <h2 class="reveal">Gallery</h2>
+    <div class="grid gallery">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?auto=format&fit=crop&w=700&q=80" alt="Latte art in a ceramic cup"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" alt="Coffee cup beside roasted beans"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=80" alt="Barista preparing coffee"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Freshly baked bread and pastries"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80" alt="Café interior with seating"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="Espresso pouring into a cup"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <h2 class="reveal">What guests say</h2>
+    <div class="grid three">
+      <blockquote class="card quote reveal"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div><p>The caramel latte is the best I've had in years. Smooth, never too sweet.</p><footer><span class="av">AM</span>Amira M.</footer></blockquote>
+      <blockquote class="card quote reveal"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div><p>My morning stop before work. The baristas remember my order and always smile.</p><footer><span class="av">DK</span>Daniel K.</footer></blockquote>
+      <blockquote class="card quote reveal"><div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div><p>Quiet, warm and a great place to read. The vanilla cold brew is a summer must.</p><footer><span class="av">SL</span>Sara L.</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="wrap contact">
+    <div class="reveal">
+      <h2>Visit us</h2>
+      <ul class="info">
+        <li><b>Address</b>123 Placeholder Street, Your City</li>
+        <li><b>Hours</b>Mon–Fri 7:00–19:00<br>Sat–Sun 8:00–20:00</li>
+        <li><b>Phone</b>(000) 000-0000</li>
+        <li><b>Email</b>hello@example.com</li>
+      </ul>
+      <div class="map" role="img" aria-label="Map placeholder">Map goes here</div>
+    </div>
+    <form id="contactForm" class="card form reveal" novalidate>
+      <h3>Send a message</h3>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <p class="err" id="nameErr"></p>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <p class="err" id="emailErr"></p>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <p class="err" id="messageErr"></p>
+      <button class="btn btn-solid" type="submit">Send message</button>
+      <p class="status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div><a href="#home" class="logo">BREW &amp; BEAN</a><p>Specialty coffee, handcrafted daily. A place to slow down.</p></div>
+    <nav aria-label="Footer"><h3>Explore</h3><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <div><h3>Follow</h3><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/" target="_blank" rel="noopener">X</a></div>
+    <div><h3>Hours</h3><p>Mon–Fri 7:00–19:00<br>Sat–Sun 8:00–20:00</p></div>
+  </div>
+  <p class="copy">© <span id="year">2026</span> BREW &amp; BEAN. All rights reserved.</p>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button id="cartClose" class="x" aria-label="Close cart">×</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="sub"><span>Subtotal</span><b id="subtotal">$0.00</b></div>
+    <button class="btn btn-solid full" id="checkout">Checkout</button>
+    <p class="status" id="checkoutMsg" role="status"></p>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
